@@ -20,6 +20,9 @@ M.treesitter = {
     --   "python"
     -- },
   },
+  compilers = {
+    "clang",
+  },
 }
 
 M.mason = {

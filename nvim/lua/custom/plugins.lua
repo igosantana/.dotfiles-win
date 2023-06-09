@@ -38,7 +38,7 @@ local plugins = {
       "rcarriga/nvim-dap-ui",
     },
     config = function(_, opts)
-      local path = "C:\\Users\\KONIA\\AppData\\Local\\nvim-data\\mason\\packages\\debugpy\\Scripts\\python"
+      local path = "C:\\Users\\KONIA\\AppData\\Local\\nvim-data\\mason\\packages\\debugpy\\venv\\Scripts\\python"
       require("dap-python").setup(path)
       require("core.utils").load_mappings "dap_python"
     end,
@@ -68,8 +68,7 @@ local plugins = {
     ensure_installed = {
       "pyright",
       "ruff",
-      "mypy",
-      "back",
+      "black",
       "debugpy",
     },
   },

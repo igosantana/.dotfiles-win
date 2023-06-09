@@ -16,7 +16,7 @@ local sources = {
   b.diagnostics.ruff, --python lint
   b.formatting.black, -- python formater
   b.formatting.csharpier, -- c# formater
-  -- b.formatting.eslint_d, -- esllint
+  b.formatting.htmlbeautifier, -- HTML formater
 
   -- Lua
   b.formatting.stylua,
