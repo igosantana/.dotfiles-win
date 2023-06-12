@@ -5,6 +5,7 @@ M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
     ["Y"] = { "yg$" },
+    ["<leader>lg"] = { ":LazyGit<CR>", "Open Lazygit" },
   },
 
   x = {

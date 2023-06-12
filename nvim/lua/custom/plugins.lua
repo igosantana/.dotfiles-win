@@ -92,6 +92,17 @@ local plugins = {
     end,
   },
 
+  { "nvim-lua/plenary.nvim" },
+
+  {
+    "kdheepak/lazygit.nvim",
+    -- optional for floating window border decoration
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    lazy = false,
+  },
+
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
