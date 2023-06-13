@@ -15,14 +15,15 @@ local sources = {
   b.formatting.gofmt, -- golang formater
   b.diagnostics.ruff, --python lint
   b.formatting.black, -- python formater
-  b.formatting.csharpier, -- c# formater
+  b.formatting.csharpier.with { filetypes = { "cs" } }, -- c# formater
+  b.diagnostics.semgrep.with { filetypes = { "cs" } }, -- c# lint
   b.formatting.htmlbeautifier, -- HTML formater
 
   -- Lua
   b.formatting.stylua,
 
   -- cpp
-  b.formatting.clang_format,
+  -- b.formatting.clang_format,
 }
 
 null_ls.setup {

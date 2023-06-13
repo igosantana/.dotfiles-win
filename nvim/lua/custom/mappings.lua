@@ -18,6 +18,15 @@ M.general = {
     ["<"] = { "<gv" },
     ["p"] = { "_dp" },
   },
+
+  -- Toggleterm keymapping
+  t = {
+    ["<ESC>"] = { [[<C-\><C-n>]] },
+    ["<C-h>"] = { [[<Cmd>wincmd h<CR>]] },
+    ["<C-j>"] = { [[<Cmd>wincmd j<CR>]] },
+    ["<C-k>"] = { [[<Cmd>wincmd k<CR>]] },
+    ["<C-l>"] = { [[<Cmd>wincmd l<CR>]] },
+  },
 }
 
 M.dap = {
