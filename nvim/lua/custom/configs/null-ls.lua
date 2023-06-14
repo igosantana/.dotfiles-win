@@ -10,14 +10,16 @@ local b = null_ls.builtins
 local sources = {
 
   -- webdev stuff
-  b.formatting.prettier, -- ts, js formater
+  b.formatting.prettier.with {
+    filetypes = { "html", "javascript", "javascriptreact", "typescript", "typescriptreact", "scss", "css", "less" },
+  }, -- ts, js formater
+  b.diagnostics.stylelint, -- css lint
   b.diagnostics.eslint_d, -- ts, js lint
   b.formatting.gofmt, -- golang formater
   b.diagnostics.ruff, --python lint
   b.formatting.black, -- python formater
   b.formatting.csharpier.with { filetypes = { "cs" } }, -- c# formater
   b.diagnostics.semgrep.with { filetypes = { "cs" } }, -- c# lint
-  b.formatting.htmlbeautifier, -- HTML formater
 
   -- Lua
   b.formatting.stylua,

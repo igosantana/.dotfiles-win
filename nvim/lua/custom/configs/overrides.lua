@@ -15,13 +15,13 @@ M.treesitter = {
     "python",
   },
   indent = {
-    enable = true,
+    enable = false,
     -- disable = {
     --   "python"
     -- },
   },
   compilers = {
-    "clang",
+    "zig",
   },
 }
 

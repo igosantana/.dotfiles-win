@@ -132,6 +132,14 @@ local plugins = {
   },
 
   {
+    "windwp/nvim-ts-autotag",
+    lazy = false,
+    opts = {
+      filetypes = { "html", "javascript", "typescript", "javascriptreact", "typescriptreact" },
+    },
+  },
+
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = { "html", "css", "bash", "javascript", "typescript", "tsx", "python", "json" },
