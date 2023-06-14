@@ -38,6 +38,13 @@ M.mason = {
     "tailwindcss-language-server",
     "prettier",
     "pyright",
+    "angularls",
+    "eslint_d",
+    "stylelint",
+    "gofmt",
+    "ruff",
+    "black",
+    "semgrep",
 
     -- c/cpp stuff
     "clangd",
