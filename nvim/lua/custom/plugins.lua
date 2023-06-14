@@ -94,14 +94,7 @@ local plugins = {
 
   { "nvim-lua/plenary.nvim" },
 
-  {
-    "kdheepak/lazygit.nvim",
-    -- optional for floating window border decoration
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    },
-    lazy = false,
-  },
+  { "tpope/vim-fugitive", lazy = false },
 
   {
     "akinsho/toggleterm.nvim",
