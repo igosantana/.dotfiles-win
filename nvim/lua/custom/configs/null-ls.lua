@@ -19,7 +19,6 @@ local sources = {
   b.diagnostics.ruff, --python lint
   b.formatting.black, -- python formater
   b.formatting.csharpier.with { filetypes = { "cs" } }, -- c# formater
-  b.diagnostics.semgrep.with { filetypes = { "cs" } }, -- c# lint
 
   -- Lua
   b.formatting.stylua,

@@ -13,6 +13,7 @@ M.treesitter = {
     "markdown",
     "markdown_inline",
     "python",
+    "c_sharp",
   },
   indent = {
     enable = false,
@@ -44,7 +45,7 @@ M.mason = {
     "gofmt",
     "ruff",
     "black",
-    "semgrep",
+    "omnisharp",
 
     -- c/cpp stuff
     "clangd",
