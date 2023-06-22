@@ -6,6 +6,11 @@ M.general = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
     ["Y"] = { "yg$" },
     ["<leader>of"] = { ":G<CR> <C-w>o", "Open vim fugitve" },
+    ["<leader>s"] = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], "rename" },
+    ["n"] = { "nzzzv", "cursor on the middle" },
+    ["N"] = { "Nzzzv", "cursor on the middle" },
+    ["<leader>y"] = { '\\"+y', "copy to system clipboard" },
+    ["<leader>Y"] = { '\\"+Y', "copy to system clipboard" },
   },
 
   x = {
@@ -17,6 +22,7 @@ M.general = {
     [">"] = { ">gv" },
     ["<"] = { "<gv" },
     ["p"] = { "_dp" },
+    ["<leader>y"] = { '\\"+y', "copy to system clipboard" },
   },
 
   -- Toggleterm keymapping
@@ -55,6 +61,12 @@ M.nvimtree = {
     ["<C-n>"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
 
     ["<leader>o"] = { "<cmd> NvimTreeFocus <CR>", "Focus nvimtree" },
+
+    ["<leader>i"] = {
+      function()
+        require("nvim-tree.api").node.open.vertical()
+      end,
+    },
   },
 }
 
